@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pinaki Ghosh | Decision Scientist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #1a1a1a;
+      line-height: 1.75;
+      font-size: 15px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 72px 24px 80px;
+    }
+
+    /* HEADER */
+    .header {
+      border-bottom: 1.5px solid #1a1a1a;
+      padding-bottom: 28px;
+      margin-bottom: 40px;
+    }
+
+    .name {
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .title {
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: #444;
+      margin-bottom: 16px;
+    }
+
+    .contact {
+      font-size: 0.85rem;
+      color: #666;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 20px;
+    }
+
+    .contact a {
+      color: #444;
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1px;
+      transition: border-color 0.2s;
+    }
+
+    .contact a:hover { border-color: #1a1a1a; color: #1a1a1a; }
+
+    /* SECTIONS */
+    .section {
+      margin-bottom: 44px;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 14px;
+    }
+
+    .section p {
+      font-size: 0.94rem;
+      color: #2a2a2a;
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+
+    /* DOCUMENTS */
+    .documents {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .doc-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1.5px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 18px 22px;
+      text-decoration: none;
+      color: #1a1a1a;
+      transition: border-color 0.2s, background 0.2s;
+      background: #fafafa;
+    }
+
+    .doc-card:hover {
+      border-color: #1a1a1a;
+      background: #f3f3f3;
+    }
+
+    .doc-left { display: flex; flex-direction: column; gap: 3px; }
+
+    .doc-title {
+      font-size: 0.94rem;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .doc-desc {
+      font-size: 0.8rem;
+      color: #777;
+      font-weight: 400;
+    }
+
+    .doc-arrow {
+      font-size: 1rem;
+      color: #aaa;
+      transition: color 0.2s, transform 0.2s;
+    }
+
+    .doc-card:hover .doc-arrow {
+      color: #1a1a1a;
+      transform: translateX(3px);
+    }
+
+    /* FOOTER */
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid #e8e8e8;
+      font-size: 0.78rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 500px) {
+      .name { font-size: 1.7rem; }
+      .container { padding: 48px 20px 60px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="name">Pinaki Ghosh</div>
+      <div class="title">Decision Scientist &nbsp;|&nbsp; Duke MIDS 2027 &nbsp;|&nbsp; F-1 CPT / OPT Eligible</div>
+      <div class="contact">
+        <a href="mailto:pinaki.ghosh@duke.edu">pinaki.ghosh@duke.edu</a>
+        <a href="https://www.linkedin.com/in/pinaki-ghosh-4a170221" target="_blank" rel="noopener">LinkedIn</a>
+        <span>+1 919-201-4534</span>
+      </div>
+    </header>
+
+    <!-- BACKGROUND -->
+    <div class="section">
+      <div class="section-label">Background</div>
+      <p>
+        A decade building analytical systems in retail, hospitality, and airline analytics
+        that change how businesses decide. The work covered customer decision systems
+        across loyalty bases of 5 to 10 million customers, pricing and promotion analytics,
+        and experimentally verified incremental revenue impact across clients in the UK,
+        Middle East, and South Asia. Outcomes were always measured against a held-out control.
+      </p>
+      <p>
+        Currently at Duke completing a Master in Data Science. Research sits at the
+        intersection of sequential decision-making under uncertainty, causal inference,
+        and human-in-the-loop system design.
+      </p>
+    </div>
+
+    <!-- RESEARCH -->
+    <div class="section">
+      <div class="section-label">Research</div>
+      <p>
+        The central question is how much of the theoretical value of an adaptive decision
+        system is realized when a human acts on its recommendations, and what design
+        choices determine that fraction. Most retail allocation systems treat demand as a
+        forecasting problem. The more fundamental problem is the decision gap — the
+        difference between what an adaptive policy could deliver if allowed to update as
+        uncertainty resolves, and what a static system actually delivers when it cannot.
+      </p>
+      <p>
+        The Economic Value of Adaptivity (EVA) formalizes this gap and decomposes it into
+        two measurable components: the value of reacting to demand signals within a
+        planning horizon, and the value of anticipating structural demand shifts across
+        horizons. SKUFlux is the four-layer system operationalizing this research across
+        distinct retail demand environments. The human interface layer is the empirical
+        core — grounded in ongoing experimental work under Professor Jana Schaich Borg
+        at Duke.
+      </p>
+    </div>
+
+    <!-- DOCUMENTS -->
+    <div class="section">
+      <div class="section-label">Documents</div>
+      <div class="documents">
+
+        <a class="doc-card" href="./Pinaki_Ghosh_Resume_Capstone.pdf" target="_blank" rel="noopener">
+          <div class="doc-left">
+            <span class="doc-title">Resume</span>
+            <span class="doc-desc">Experience, research, and technical background</span>
+          </div>
+          <span class="doc-arrow">&#8594;</span>
+        </a>
+
+        <a class="doc-card" href="./Pinaki_Ghosh_Research_Abstract.pdf" target="_blank" rel="noopener">
+          <div class="doc-left">
+            <span class="doc-title">Research Abstract</span>
+            <span class="doc-desc">Economic Value of Adaptivity — overview and architecture</span>
+          </div>
+          <span class="doc-arrow">&#8594;</span>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      PinakiG-duke.github.io/Pinaki-Ghosh-Portfolio &nbsp;&middot;&nbsp; Full research documentation available on request
+    </div>
+
+  </div>
+</body>
+</html>
