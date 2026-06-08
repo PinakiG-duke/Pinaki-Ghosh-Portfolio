@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Projects | Pinaki Ghosh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: #1a1a1a; line-height: 1.75; font-size: 15px; }
+    .site-nav { border-bottom: 1px solid #e8e8e8; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; background: #fff; z-index: 10; }
+    .nav-brand { font-size: 14px; font-weight: 600; color: #1a1a1a; text-decoration: none; letter-spacing: -0.2px; }
+    .nav-links { display: flex; gap: 24px; }
+    .nav-links a { font-size: 12.5px; color: #666; text-decoration: none; padding-bottom: 2px; }
+    .nav-links a:hover { color: #1a1a1a; }
+    .nav-links a.active { color: #1a1a1a; border-bottom: 1px solid #1a1a1a; }
+    .container { max-width: 700px; margin: 0 auto; padding: 52px 24px 72px; }
+    .page-title { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 8px; }
+    .page-sub { font-size: 13.5px; color: #666; margin-bottom: 8px; line-height: 1.7; }
+    .category-label { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #1a1a1a; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 1.5px solid #1a1a1a; }
+    .card { border: 0.5px solid #e0e0e0; border-radius: 8px; margin-bottom: 8px; overflow: hidden; }
+    .card-header { padding: 14px 18px; cursor: pointer; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; background: #fafafa; transition: background 0.15s; }
+    .card-header:hover { background: #f3f3f3; }
+    .card-title { font-size: 13.5px; font-weight: 500; color: #1a1a1a; margin-bottom: 2px; }
+    .card-sub { font-size: 11.5px; color: #888; }
+    .toggle-icon { font-size: 18px; color: #bbb; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+    .card-header:hover .toggle-icon { color: #888; }
+    .card-body { display: none; padding: 14px 18px 16px; border-top: 0.5px solid #e8e8e8; font-size: 13px; color: #444; line-height: 1.75; background: #fff; }
+    .card-body.open { display: block; }
+    .benefit-label { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #888; margin-bottom: 6px; }
+    .site-footer { margin-top: 56px; padding-top: 20px; border-top: 0.5px solid #e8e8e8; font-size: 11px; color: #bbb; }
+    @media (max-width: 500px) { .container { padding: 40px 18px 56px; } .nav-links { gap: 16px; } }
+  </style>
+  <script>
+    function toggleCard(el) {
+      var body = el.nextElementSibling;
+      var icon = el.querySelector('.toggle-icon');
+      var isOpen = body.classList.contains('open');
+      body.classList.toggle('open');
+      icon.textContent = isOpen ? '+' : '\u2212';
+    }
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="./index.html" class="nav-brand">Pinaki Ghosh</a>
+    <div class="nav-links">
+      <a href="./resume.html">Resume</a>
+      <a href="./professional-projects.html" class="active">Professional Projects</a>
+      <a href="./research.html">Research</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="page-title">Professional Projects</div>
+    <div class="page-sub">A decade of commercial analytics across retail, banking, hospitality, and airline domains. Case studies in progress.</div>
+
+    <!-- DECISION SCIENCE -->
+    <div class="category-label">Decision Science</div>
+
+    <div class="card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div>
+          <div class="card-title">Customer Value Management</div>
+          <div class="card-sub">Middle East Fashion Retailer &nbsp;&middot;&nbsp; ITC Infotech</div>
+        </div>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body">
+        <div class="benefit-label">Outcome</div>
+        <p>1.5 to 2% experimentally verified incremental lift against holdout groups across a 5 to 10 million customer loyalty base. $20M+ in annual verified client revenue. $4M practice payout contractually tied to verified lift.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div>
+          <div class="card-title">Customer Value Management</div>
+          <div class="card-sub">South African Food and Fashion Retailers &nbsp;&middot;&nbsp; ITC Infotech</div>
+        </div>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body">
+        <div class="benefit-label">Outcome</div>
+        <p>Scaled the Customer Targeted Marketing Calendar across South African food and fashion retail clients. Contributed to $20M+ in annual verified client revenue across 4 active retail engagements.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div>
+          <div class="card-title">Affluent Banking Analytics</div>
+          <div class="card-sub">Leading Middle East Bank &nbsp;&middot;&nbsp; ITC Infotech</div>
+        </div>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body">
+        <div class="benefit-label">Outcome</div>
+        <p>11% observed improvement in Average Daily Balance post-implementation, translating to material AUM growth. Outputs delivered to relationship managers as decision intelligence for improving a weighted daily balance measure rather than end-of-month snapshots.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div>
+          <div class="card-title">Hospitality Revenue Strategy</div>
+          <div class="card-sub">Indian Luxury Hotel Chain &nbsp;&middot;&nbsp; ITC Infotech</div>
+        </div>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body">
+        <div class="benefit-label">Outcome</div>
+        <p>Booking behavior segmentation distinguishing leisure, conference, and occasion-driven travel needs by booking timing, lead time, and frequency. Segment outputs informed pricing, packaging, and product design decisions, connecting behavioral need identification directly to revenue management strategy.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div>
+          <div class="card-title">Trade Promotion Optimization</div>
+          <div class="card-sub">ITC Foods Biscuits Division &nbsp;&middot;&nbsp; ITC Infotech</div>
+        </div>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body">
+        <div class="benefit-label">Outcome</div>
+        <p>30% promotional ROI improvement for the pilot Biscuits category, achieved primarily through promotional spend reduction rather than revenue uplift. Causal attribution framework identified optimal offer structures by decomposing observed sales into baseline and promotional components with long-term carryover effects.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div>
+          <div class="card-title">Airline Catering Demand Forecasting</div>
+          <div class="card-sub">Saudi Arabian Airlines Catering &nbsp;&middot;&nbsp; ITC Infotech</div>
+        </div>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body">
+        <div class="benefit-label">Outcome</div>
+        <p>More than 25% MAPE improvement and approximately 3% cost reduction. Random Forest model incorporating route, flight type, and seasonal features. Adopted by catering managers as an operational decision tool, embedding forecasts into workflows rather than one-off reports.</p>
+      </div>
+    </div>
+
+    <!-- MARKETING ANALYTICS -->
+    <div class="category-label">Marketing Analytics</div>
+
+    <div class="card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div>
+          <div class="card-title">Health and Wellness CRM</div>
+          <div class="card-sub">NBTY &nbsp;&middot;&nbsp; ITC Infotech</div>
+        </div>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body">
+        <div class="benefit-label">Outcome</div>
+        <p>40% improvement in product-level campaign response and 25% increase in loyalty card activations. Price elasticity models, customer propensity models, and behavioral segmentation frameworks built as the foundational analytical capability for the Customer Value Management practice.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div>
+          <div class="card-title">Pharma Customer Engagement</div>
+          <div class="card-sub">UK Pharma &nbsp;&middot;&nbsp; ITC Infotech</div>
+        </div>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body">
+        <div class="benefit-label">Outcome</div>
+        <p>40% uplift in identified customer engagement across prescription and OTC categories. Personalization framework transitioned to the client's execution team for ongoing operation.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div>
+          <div class="card-title">Airlines Customer Segmentation</div>
+          <div class="card-sub">FinnAir and FlyDubai &nbsp;&middot;&nbsp; ITC Infotech</div>
+        </div>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body">
+        <div class="benefit-label">Outcome</div>
+        <p>13% experimentally verified incremental lift against a held-out control group. Trip reconstruction model resolved multi-leg journeys across fragmented PNRs by trip rather than leg, segmented customers by flying need, and targeted journey leakage across carriers.</p>
+      </div>
+    </div>
+
+    <!-- AGENTIC AI -->
+    <div class="category-label">Agentic AI Implementation</div>
+
+    <div class="card">
+      <div class="card-header" onclick="toggleCard(this)">
+        <div>
+          <div class="card-title">Autonomous Lead Generation Pipeline</div>
+          <div class="card-sub">Marketboats Consulting</div>
+        </div>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div class="card-body">
+        <div class="benefit-label">Outcome</div>
+        <p>70% increase in qualified lead throughput, 40% reduction in cost-per-lead, and 60% reduction in manual intervention on strategic decision nodes. End-to-end agentic pipeline covering ICP definition, profile matching, outreach sequencing, quality validation, and telemarketing decision support — agentic in first principle, predating the terminology.</p>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      PinakiG-duke.github.io/Pinaki-Ghosh-Portfolio
+    </div>
+
+  </div>
+</body>
+</html>

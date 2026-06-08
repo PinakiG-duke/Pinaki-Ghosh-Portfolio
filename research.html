@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Pinaki Ghosh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: #1a1a1a; line-height: 1.75; font-size: 15px; }
+    .site-nav { border-bottom: 1px solid #e8e8e8; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; background: #fff; z-index: 10; }
+    .nav-brand { font-size: 14px; font-weight: 600; color: #1a1a1a; text-decoration: none; letter-spacing: -0.2px; }
+    .nav-links { display: flex; gap: 24px; }
+    .nav-links a { font-size: 12.5px; color: #666; text-decoration: none; padding-bottom: 2px; }
+    .nav-links a:hover { color: #1a1a1a; }
+    .nav-links a.active { color: #1a1a1a; border-bottom: 1px solid #1a1a1a; }
+    .container { max-width: 700px; margin: 0 auto; padding: 52px 24px 72px; }
+    .page-title { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 8px; }
+    .page-sub { font-size: 13.5px; color: #666; margin-bottom: 28px; line-height: 1.7; }
+    .abstract-btn { display: inline-flex; align-items: center; gap: 10px; border: 1.5px solid #1a1a1a; border-radius: 6px; padding: 11px 22px; font-size: 13px; font-weight: 500; color: #1a1a1a; text-decoration: none; margin-bottom: 44px; transition: background 0.15s; font-family: 'Inter', sans-serif; }
+    .abstract-btn:hover { background: #f3f3f3; }
+    .abstract-btn svg { flex-shrink: 0; }
+    .flow-bar { display: flex; align-items: center; gap: 6px; margin-bottom: 40px; flex-wrap: wrap; padding: 12px 16px; background: #fafafa; border: 0.5px solid #e8e8e8; border-radius: 8px; }
+    .flow-step { font-size: 11px; font-weight: 500; color: #888; letter-spacing: 0.03em; white-space: nowrap; }
+    .flow-arrow { font-size: 11px; color: #d0d0d0; }
+    .section-block { margin-bottom: 36px; }
+    .section-header { display: flex; align-items: baseline; gap: 10px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1.5px solid #1a1a1a; }
+    .section-num { font-size: 10px; font-weight: 600; color: #bbb; letter-spacing: 0.08em; }
+    .section-title { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #1a1a1a; }
+    .section-desc { font-size: 12.5px; color: #666; line-height: 1.65; margin-bottom: 14px; }
+    .card { border: 0.5px solid #e0e0e0; border-radius: 8px; margin-bottom: 8px; overflow: hidden; }
+    .card-header { padding: 14px 18px; cursor: pointer; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; background: #fafafa; transition: background 0.15s; }
+    .card-header:hover { background: #f3f3f3; }
+    .card-title { font-size: 13.5px; font-weight: 500; color: #1a1a1a; margin-bottom: 2px; }
+    .card-sub { font-size: 11.5px; color: #888; }
+    .card-badge { display: inline-block; font-size: 10px; font-weight: 500; padding: 2px 7px; border-radius: 10px; margin-top: 4px; }
+    .badge-progress { background: #fff3cd; color: #856404; }
+    .badge-complete { background: #d4edda; color: #155724; }
+    .toggle-icon { font-size: 18px; color: #bbb; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+    .card-header:hover .toggle-icon { color: #888; }
+    .card-body { display: none; padding: 14px 18px 16px; border-top: 0.5px solid #e8e8e8; font-size: 13px; color: #444; line-height: 1.75; background: #fff; }
+    .card-body.open { display: block; }
+    .card-body p { margin-bottom: 8px; }
+    .card-body p:last-child { margin-bottom: 0; }
+    .card-body a { color: #555; font-size: 12px; }
+    .rq-label { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #888; margin-bottom: 5px; margin-top: 4px; }
+    .site-footer { margin-top: 56px; padding-top: 20px; border-top: 0.5px solid #e8e8e8; font-size: 11px; color: #bbb; }
+    @media (max-width: 500px) { .container { padding: 40px 18px 56px; } .nav-links { gap: 16px; } .flow-bar { gap: 4px; } }
+  </style>
+  <script>
+    function toggleCard(el) {
+      var body = el.nextElementSibling;
+      var icon = el.querySelector('.toggle-icon');
+      var isOpen = body.classList.contains('open');
+      body.classList.toggle('open');
+      icon.textContent = isOpen ? '+' : '\u2212';
+    }
+  </script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="./index.html" class="nav-brand">Pinaki Ghosh</a>
+    <div class="nav-links">
+      <a href="./resume.html">Resume</a>
+      <a href="./professional-projects.html">Professional Projects</a>
+      <a href="./research.html" class="active">Research</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="page-title">Research</div>
+    <div class="page-sub">The overarching research question: how much of the theoretical value of an adaptive decision system is realized when a human acts on its recommendations, and what design choices determine that fraction. The Economic Value of Adaptivity (EVA) formalizes this gap across four interconnected research layers.</div>
+
+    <a class="abstract-btn" href="./Pinaki_Ghosh_Research_Abstract.pdf" target="_blank" rel="noopener">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2h7l3 3v7H2V2z" stroke="#1a1a1a" stroke-width="1.2" stroke-linejoin="round"/><path d="M9 2v3h3" stroke="#1a1a1a" stroke-width="1.2" stroke-linejoin="round"/><path d="M4 7h6M4 9.5h4" stroke="#1a1a1a" stroke-width="1.2" stroke-linecap="round"/></svg>
+      View Research Abstract
+    </a>
+
+    <div class="flow-bar">
+      <span class="flow-step">Simulation</span>
+      <span class="flow-arrow">&#8594;</span>
+      <span class="flow-step">Causal Inference</span>
+      <span class="flow-arrow">&#8594;</span>
+      <span class="flow-step">Optimization</span>
+      <span class="flow-arrow">&#8594;</span>
+      <span class="flow-step">Human-Algorithm Interaction</span>
+    </div>
+
+    <!-- SIMULATION -->
+    <div class="section-block">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <span class="section-title">Simulation</span>
+      </div>
+      <p class="section-desc">Characterizing demand uncertainty as the statistical foundation for adaptive policy evaluation. Establishing how demand persistence varies across SKUs and demand environments.</p>
+
+      <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div>
+            <div class="card-title">When Does Demand Have Memory?</div>
+            <div class="card-sub">STA 611, Duke University &nbsp;&middot;&nbsp; 2026</div>
+            <span class="card-badge badge-complete">Completed</span>
+          </div>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="card-body">
+          <div class="rq-label">Research Question</div>
+          <p>Is AR(1) demand persistence statistically significant and SKU-level across the retail catalog? Does it remain temporally stable, or does it exhibit regime shifts consistent with the demand environments posited in the EVA typology?</p>
+          <div class="rq-label" style="margin-top:12px">Findings</div>
+          <p>91.1% of sampled Walmart SKUs (M5 dataset, 5.3 years) show statistically significant AR(1) persistence (mean &rho; = 0.550). One-way ANOVA confirms &rho; is a SKU-level property, not predictable from product category taxonomy (F = 0.979, p = 0.384). Chow tests reveal 78.3% of high-persistence SKUs exhibit structural regime shifts — &rho; collapse and amplification patterns map directly to DE3 and DE4 demand environments in the EVA typology. Updated demand specification incorporates time-varying, store-adjusted persistence with heavier-tailed errors.</p>
+          <p><a href="https://github.com/PinakiG-duke/sta611-demand-persistence" target="_blank" rel="noopener">&#8599; Code and notebooks on GitHub</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CAUSAL INFERENCE -->
+    <div class="section-block">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <span class="section-title">Causal Inference</span>
+      </div>
+      <p class="section-desc">Identifying structural drivers of behavioral change using quasi-experimental methods. Establishing causal claims from observational data where randomized experiments are not available.</p>
+
+      <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div>
+            <div class="card-title">Early Evidence on Generative AI Exposure and Labor Market Outcomes</div>
+            <div class="card-sub">IDS 702, Duke University &nbsp;&middot;&nbsp; 2026 &nbsp;&middot;&nbsp; Team: Aesha Gandhi, Pinaki Ghosh, Shambhavi Khanna, Isaac Vergara</div>
+            <span class="card-badge badge-complete">Completed</span>
+          </div>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="card-body">
+          <div class="rq-label">Research Question</div>
+          <p>Are early signs of differential labor market strain already measurable in AI-exposed industries, and are early-career workers bearing disproportionate pressure?</p>
+          <div class="rq-label" style="margin-top:12px">Findings</div>
+          <p>Difference-in-differences analysis using CPS ASEC data (2016&ndash;2025) linked to the AIIE industry-level AI exposure index (Felten et al. 2021). Post-2023 unemployment increased 0.29 percentage points in high-AIIE industries relative to low-AIIE industries, concentrated in workers aged 25&ndash;34. No comparable wage signal detected in the current post-period window. Event-study coefficients confirm directional robustness of the unemployment result. Findings inform early policy intervention targeting AI-exposed labour markets before displacement effects become conclusive.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- OPTIMIZATION -->
+    <div class="section-block">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <span class="section-title">Optimization</span>
+      </div>
+      <p class="section-desc">Designing and solving constrained allocation problems under real operational stakes. Building the optimization formulation depth underlying the SKUPlan layer of the EVA architecture.</p>
+
+      <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div>
+            <div class="card-title">Multi-Objective School Siting and Boundary Optimization</div>
+            <div class="card-sub">Durham Public Schools &nbsp;&middot;&nbsp; Duke Data+ &nbsp;&middot;&nbsp; 2026 &nbsp;&middot;&nbsp; Graduate Research Lead</div>
+            <span class="card-badge badge-progress">In Progress</span>
+          </div>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="card-body">
+          <div class="rq-label">Research Question</div>
+          <p>How should Durham County optimize new school siting and attendance boundary assignment across 851 residential planning units and 50 existing schools under projected enrollment uncertainty driven by residential development, demographic shifts, and charter expansion?</p>
+          <div class="rq-label" style="margin-top:12px">Findings</div>
+          <p>Extended a single-objective capacitated facility location baseline across four methodological tracks: road network distance improvement using OpenStreetMap, a systematic multi-metric solution evaluation framework, enrollment forecast combination using Student Generation Rate and Cohort Survival Rate methods, and a multi-objective Pareto frontier formulation via the epsilon-constraint method incorporating assignment stability and socioeconomic diversity alongside distance minimization. Primary author. Presenting at Duke Data+ Symposium, July 2026.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div>
+            <div class="card-title">Constrained Network Routing Optimization</div>
+            <div class="card-sub">MOPTA 2026 Competition &nbsp;&middot;&nbsp; Lehigh University &nbsp;&middot;&nbsp; Individual Entry</div>
+            <span class="card-badge badge-progress">In Progress</span>
+          </div>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="card-body">
+          <div class="rq-label">Problem</div>
+          <p>Constrained fleet routing optimization — determining which orders to assign to a dedicated fleet and how to route trucks efficiently under capacity and operational constraints.</p>
+          <div class="rq-label" style="margin-top:12px">Approach</div>
+          <p>Applying Clarke-Wright savings heuristics with local search improvement. Demonstrates constrained combinatorial optimization formulation at the complexity level the SKUPlan allocation layer requires.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HUMAN-ALGORITHM INTERACTION -->
+    <div class="section-block">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <span class="section-title">Human-Algorithm Interaction</span>
+      </div>
+      <p class="section-desc">Empirically establishing how representation choices in analytical systems affect the quality of human decisions. The direct empirical foundation for the EVA human interface layer.</p>
+
+      <div class="card">
+        <div class="card-header" onclick="toggleCard(this)">
+          <div>
+            <div class="card-title">Cognitive-Centered Data Visualization</div>
+            <div class="card-sub">Bass Connections, Duke University &nbsp;&middot;&nbsp; 2025&ndash;26 &nbsp;&middot;&nbsp; Supervisor: Prof. Jana Schaich Borg</div>
+            <span class="card-badge badge-progress">Paper in Progress</span>
+          </div>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="card-body">
+          <div class="rq-label">Research Question</div>
+          <p>Do established data visualization best practices actually improve comprehension and decision-making? Specifically, do chart titles and data highlighting affect viewer interpretation, confidence, and the conclusions viewers draw?</p>
+          <div class="rq-label" style="margin-top:12px">Findings</div>
+          <p>Two completed Prolific-based factorial experiments (N = 476). Descriptive chart titles create systematic overconfidence in incorrect interpretations. Take-home titles dramatically increase correct conclusion rates. Findings challenge a foundational assumption in visualization guidance and establish the empirical basis for representation design choices in adaptive decision interfaces. A follow-up eye-tracking study is designed to validate Phase 1 findings through attentional mechanism analysis. Paper in progress. Research presented at the Duke Bass Connections Symposium, April 2026.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      PinakiG-duke.github.io/Pinaki-Ghosh-Portfolio &nbsp;&middot;&nbsp; Full research documentation available on request
+    </div>
+
+  </div>
+</body>
+</html>

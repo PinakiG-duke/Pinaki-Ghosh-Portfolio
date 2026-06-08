@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | Pinaki Ghosh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: #1a1a1a; line-height: 1.75; font-size: 15px; }
+    .site-nav { border-bottom: 1px solid #e8e8e8; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; background: #fff; z-index: 10; }
+    .nav-brand { font-size: 14px; font-weight: 600; color: #1a1a1a; text-decoration: none; letter-spacing: -0.2px; }
+    .nav-links { display: flex; gap: 24px; }
+    .nav-links a { font-size: 12.5px; color: #666; text-decoration: none; padding-bottom: 2px; }
+    .nav-links a:hover { color: #1a1a1a; }
+    .nav-links a.active { color: #1a1a1a; border-bottom: 1px solid #1a1a1a; }
+    .container { max-width: 700px; margin: 0 auto; padding: 52px 24px 72px; }
+    .page-title { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 8px; }
+    .page-sub { font-size: 13.5px; color: #666; margin-bottom: 40px; line-height: 1.7; }
+    .section-label { font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #888; margin-bottom: 14px; }
+    .doc-card { display: flex; align-items: center; justify-content: space-between; border: 0.5px solid #e0e0e0; border-radius: 8px; padding: 18px 20px; text-decoration: none; color: #1a1a1a; background: #fafafa; margin-bottom: 10px; transition: border-color 0.2s, background 0.2s; }
+    .doc-card:hover { border-color: #1a1a1a; background: #f3f3f3; }
+    .doc-title { font-size: 13.5px; font-weight: 500; margin-bottom: 3px; }
+    .doc-desc { font-size: 12px; color: #888; line-height: 1.5; }
+    .doc-arrow { font-size: 15px; color: #bbb; transition: color 0.2s, transform 0.2s; }
+    .doc-card:hover .doc-arrow { color: #1a1a1a; transform: translateX(3px); }
+    .divider { border: none; border-top: 0.5px solid #e8e8e8; margin: 36px 0; }
+    .section { margin-bottom: 28px; }
+    .section p { font-size: 13.5px; color: #444; line-height: 1.8; }
+    .skills-grid { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+    .skill-row { font-size: 13px; color: #444; line-height: 1.6; }
+    .skill-label { font-weight: 500; color: #1a1a1a; }
+    .site-footer { margin-top: 56px; padding-top: 20px; border-top: 0.5px solid #e8e8e8; font-size: 11px; color: #bbb; }
+    @media (max-width: 500px) { .container { padding: 40px 18px 56px; } .nav-links { gap: 16px; } }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="./index.html" class="nav-brand">Pinaki Ghosh</a>
+    <div class="nav-links">
+      <a href="./resume.html" class="active">Resume</a>
+      <a href="./professional-projects.html">Professional Projects</a>
+      <a href="./research.html">Research</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="page-title">Resume</div>
+    <div class="page-sub">Decision Scientist with 10+ years of commercial analytics experience across retail, hospitality, and airline domains. Currently at Duke MIDS (graduating May 2027), with active research in adaptive decision systems and human-algorithm interface design.</div>
+
+    <div class="section-label">Documents</div>
+
+    <a class="doc-card" href="./Pinaki_Ghosh_Resume_Capstone.pdf" target="_blank" rel="noopener">
+      <div>
+        <div class="doc-title">Full Resume</div>
+        <div class="doc-desc">Experience &middot; Research &middot; Education &middot; Technical Skills</div>
+      </div>
+      <span class="doc-arrow">&#8594;</span>
+    </a>
+
+    <a class="doc-card" href="./Pinaki_Ghosh_Research_Abstract.pdf" target="_blank" rel="noopener">
+      <div>
+        <div class="doc-title">Research Abstract</div>
+        <div class="doc-desc">Economic Value of Adaptivity — research program overview and architecture</div>
+      </div>
+      <span class="doc-arrow">&#8594;</span>
+    </a>
+
+    <hr class="divider" />
+
+    <div class="section-label">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-row"><span class="skill-label">Decision Science:</span> Sequential Decision-Making &nbsp;&middot;&nbsp; Causal Inference &nbsp;&middot;&nbsp; Experimental Design &nbsp;&middot;&nbsp; Pricing and Revenue Optimization &nbsp;&middot;&nbsp; Human-Algorithm Interface Design</div>
+      <div class="skill-row"><span class="skill-label">Predictive Modelling:</span> Demand Forecasting &nbsp;&middot;&nbsp; Segmentation &nbsp;&middot;&nbsp; Propensity Modelling &nbsp;&middot;&nbsp; Uplift and Incrementality &nbsp;&middot;&nbsp; Recommendation Systems</div>
+      <div class="skill-row"><span class="skill-label">Programming:</span> Python (scikit-learn, SciPy, statsmodels, pandas) &nbsp;&middot;&nbsp; R &nbsp;&middot;&nbsp; SQL &nbsp;&middot;&nbsp; Gurobi</div>
+      <div class="skill-row"><span class="skill-label">Cloud and Tools:</span> AWS (SageMaker, Glue, Athena) &nbsp;&middot;&nbsp; Power BI &nbsp;&middot;&nbsp; Matplotlib &nbsp;&middot;&nbsp; Git</div>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="section-label">Education</div>
+    <div class="skills-grid">
+      <div class="skill-row"><span class="skill-label">Duke University</span> — M.S. Interdisciplinary Data Science, GPA 3.8/4.0, May 2027</div>
+      <div class="skill-row"><span class="skill-label">Indian Institute of Management Mumbai</span> — PG Diploma in IT Management, GPA 4.0/4.0</div>
+      <div class="skill-row"><span class="skill-label">Indian Statistical Institute</span> — Certification, Data Mining and Business Analytics</div>
+      <div class="skill-row"><span class="skill-label">Institute of Engineering and Management, Kolkata</span> — B.Tech, Electronics and Communication Engineering</div>
+    </div>
+
+    <div class="site-footer">
+      PinakiG-duke.github.io/Pinaki-Ghosh-Portfolio
+    </div>
+
+  </div>
+</body>
+</html>
